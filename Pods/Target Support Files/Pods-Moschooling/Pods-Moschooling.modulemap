@@ -1,0 +1,6 @@
+framework module Pods_Moschooling {
+  umbrella header "Pods-Moschooling-umbrella.h"
+
+  export *
+  module * { export * }
+}

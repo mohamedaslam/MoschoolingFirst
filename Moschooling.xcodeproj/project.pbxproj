@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091B8A3564841A921FAEA9EB /* Pods_MoschoolingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2712D62D1371F71A3A6818D /* Pods_MoschoolingTests.framework */; };
+		186A284720599C38008FD323 /* StudentsAttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A284620599C38008FD323 /* StudentsAttendanceTableViewCell.swift */; };
+		186A284920599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A284820599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift */; };
+		186D5A69204F0C22004FC225 /* StudentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D5A68204F0C22004FC225 /* StudentListVC.swift */; };
+		186D5A6B204F0E83004FC225 /* StudentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D5A6A204F0E83004FC225 /* StudentListTableViewCell.swift */; };
+		187ACC042067E6F90069CA83 /* AttendanceBarimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC022067E6F90069CA83 /* AttendanceBarimg.png */; };
+		187ACC052067E6F90069CA83 /* SchoolBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC032067E6F90069CA83 /* SchoolBarImg.png */; };
+		187ACC072067E79B0069CA83 /* MainBGImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC062067E79B0069CA83 /* MainBGImg.png */; };
+		187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC082067EA7E0069CA83 /* TrackerBarImg.png */; };
+		187ACC0F2067EA7F0069CA83 /* dashboardBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC092067EA7E0069CA83 /* dashboardBarImg.png */; };
+		187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */; };
+		187ACC132067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */; };
+		4EAD553D5020680C47B2B9D7 /* Pods_MoschoolingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46A71FC7E15B9180F72ACB4 /* Pods_MoschoolingUITests.framework */; };
+		AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35462C205F9B5B00197E6D /* ImageCategory.swift */; };
+		AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */; };
+		AE354633205F9B6400197E6D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354630205F9B6400197E6D /* CustomTableViewCell.swift */; };
+		AE354636205F9B6B00197E6D /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE354634205F9B6A00197E6D /* CustomCollectionViewCell.xib */; };
+		AE354637205F9B6B00197E6D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354635205F9B6B00197E6D /* CustomCollectionViewCell.swift */; };
+		AE35463A205F9B7100197E6D /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354638205F9B7000197E6D /* CustomHeaderView.swift */; };
+		AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE354639205F9B7100197E6D /* CustomHeaderView.xib */; };
+		AE354641205F9F6700197E6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354640205F9F6600197E6D /* ViewController.swift */; };
+		AE707B6A204D153400A3288D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707B69204D153400A3288D /* AppDelegate.swift */; };
+		AE707B6F204D153400A3288D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE707B6D204D153400A3288D /* Main.storyboard */; };
+		AE707B71204D153400A3288D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE707B70204D153400A3288D /* Assets.xcassets */; };
+		AE707B74204D153400A3288D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE707B72204D153400A3288D /* LaunchScreen.storyboard */; };
+		AE707B7F204D153400A3288D /* MoschoolingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707B7E204D153400A3288D /* MoschoolingTests.swift */; };
+		AE707B8A204D153400A3288D /* MoschoolingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707B89204D153400A3288D /* MoschoolingUITests.swift */; };
+		AE707B9F204D166E00A3288D /* Schoolbus.png in Resources */ = {isa = PBXBuildFile; fileRef = AE707B9B204D166D00A3288D /* Schoolbus.png */; };
+		AE707BA0204D166E00A3288D /* Parents.png in Resources */ = {isa = PBXBuildFile; fileRef = AE707B9C204D166D00A3288D /* Parents.png */; };
+		AE707BA1204D166E00A3288D /* Bus.png in Resources */ = {isa = PBXBuildFile; fileRef = AE707B9D204D166D00A3288D /* Bus.png */; };
+		AE707BA2204D166E00A3288D /* Drivermen.png in Resources */ = {isa = PBXBuildFile; fileRef = AE707B9E204D166D00A3288D /* Drivermen.png */; };
+		AE707BA4204D16B600A3288D /* AccessCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BA3204D16B600A3288D /* AccessCodeVC.swift */; };
+		AE707BA6204D16CF00A3288D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BA5204D16CF00A3288D /* LoginVC.swift */; };
+		AE707BA8204D16E400A3288D /* SchoolBusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BA7204D16E400A3288D /* SchoolBusVC.swift */; };
+		AE707BAA204D170700A3288D /* AttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BA9204D170700A3288D /* AttendanceVC.swift */; };
+		AE707BAC204D172B00A3288D /* SyllabusTrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BAB204D172B00A3288D /* SyllabusTrackerVC.swift */; };
+		AE707BAE204D173E00A3288D /* AssignmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BAD204D173E00A3288D /* AssignmentVC.swift */; };
+		AE707BB0204D178600A3288D /* AcademicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BAF204D178600A3288D /* AcademicVC.swift */; };
+		AE707BB2204D17A500A3288D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BB1204D17A500A3288D /* BaseViewController.swift */; };
+		AE707BB6204D17AE00A3288D /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BB3204D17AD00A3288D /* PlayVC.swift */; };
+		AE707BB7204D17AE00A3288D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BB4204D17AE00A3288D /* HomeVC.swift */; };
+		AE707BB8204D17AE00A3288D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BB5204D17AE00A3288D /* MenuViewController.swift */; };
+		AE707BBA204D17C100A3288D /* VehicleLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BB9204D17C100A3288D /* VehicleLocationTableViewCell.swift */; };
+		AE707BC0204D17C900A3288D /* SyllabusTrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BBB204D17C900A3288D /* SyllabusTrackerTableViewCell.swift */; };
+		AE707BC4204D17C900A3288D /* AssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */; };
+		AE707BC7204D17D000A3288D /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC5204D17D000A3288D /* UserDetail.swift */; };
+		AE707BC8204D17D000A3288D /* DriverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC6204D17D000A3288D /* DriverData.swift */; };
+		AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE87017A204D2604000F9033 /* GoogleService-Info.plist */; };
+		FA3CB1C35FF616952C619406 /* Pods_Moschooling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE707B7B204D153400A3288D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE707B5E204D153300A3288D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE707B65204D153300A3288D;
+			remoteInfo = Moschooling;
+		};
+		AE707B86204D153400A3288D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE707B5E204D153300A3288D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE707B65204D153300A3288D;
+			remoteInfo = Moschooling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186A284620599C38008FD323 /* StudentsAttendanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsAttendanceTableViewCell.swift; sourceTree = "<group>"; };
+		186A284820599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendanceTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		186D5A68204F0C22004FC225 /* StudentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListVC.swift; sourceTree = "<group>"; };
+		186D5A6A204F0E83004FC225 /* StudentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewCell.swift; sourceTree = "<group>"; };
+		187ACC022067E6F90069CA83 /* AttendanceBarimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttendanceBarimg.png; sourceTree = "<group>"; };
+		187ACC032067E6F90069CA83 /* SchoolBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SchoolBarImg.png; sourceTree = "<group>"; };
+		187ACC062067E79B0069CA83 /* MainBGImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainBGImg.png; sourceTree = "<group>"; };
+		187ACC082067EA7E0069CA83 /* TrackerBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackerBarImg.png; sourceTree = "<group>"; };
+		187ACC092067EA7E0069CA83 /* dashboardBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardBarImg.png; sourceTree = "<group>"; };
+		187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AssignmentBarImg.png; sourceTree = "<group>"; };
+		187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = if_map__location__navigation__mark__pin__lcation__gps_2528049.png; sourceTree = "<group>"; };
+		2BC5565538BDE3A66853F5B1 /* Pods-MoschoolingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D8D4074C752CDA222AED714 /* Pods-MoschoolingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		76552C53754FA3536CC0B73C /* Pods-Moschooling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moschooling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling.release.xcconfig"; sourceTree = "<group>"; };
+		AE35462C205F9B5B00197E6D /* ImageCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCategory.swift; sourceTree = "<group>"; };
+		AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		AE354630205F9B6400197E6D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AE354634205F9B6A00197E6D /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE354635205F9B6B00197E6D /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE354638205F9B7000197E6D /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		AE354639205F9B7100197E6D /* CustomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		AE354640205F9F6600197E6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE707B66204D153300A3288D /* Moschooling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moschooling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE707B69204D153400A3288D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE707B6E204D153400A3288D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE707B70204D153400A3288D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE707B73204D153400A3288D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE707B75204D153400A3288D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE707B7A204D153400A3288D /* MoschoolingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoschoolingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE707B7E204D153400A3288D /* MoschoolingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoschoolingTests.swift; sourceTree = "<group>"; };
+		AE707B80204D153400A3288D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE707B85204D153400A3288D /* MoschoolingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoschoolingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE707B89204D153400A3288D /* MoschoolingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoschoolingUITests.swift; sourceTree = "<group>"; };
+		AE707B8B204D153400A3288D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE707B9B204D166D00A3288D /* Schoolbus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Schoolbus.png; sourceTree = "<group>"; };
+		AE707B9C204D166D00A3288D /* Parents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parents.png; sourceTree = "<group>"; };
+		AE707B9D204D166D00A3288D /* Bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bus.png; sourceTree = "<group>"; };
+		AE707B9E204D166D00A3288D /* Drivermen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drivermen.png; sourceTree = "<group>"; };
+		AE707BA3204D16B600A3288D /* AccessCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCodeVC.swift; sourceTree = "<group>"; };
+		AE707BA5204D16CF00A3288D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AE707BA7204D16E400A3288D /* SchoolBusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBusVC.swift; sourceTree = "<group>"; };
+		AE707BA9204D170700A3288D /* AttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceVC.swift; sourceTree = "<group>"; };
+		AE707BAB204D172B00A3288D /* SyllabusTrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyllabusTrackerVC.swift; sourceTree = "<group>"; };
+		AE707BAD204D173E00A3288D /* AssignmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentVC.swift; sourceTree = "<group>"; };
+		AE707BAF204D178600A3288D /* AcademicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicVC.swift; sourceTree = "<group>"; };
+		AE707BB1204D17A500A3288D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AE707BB3204D17AD00A3288D /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		AE707BB4204D17AE00A3288D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AE707BB5204D17AE00A3288D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AE707BB9204D17C100A3288D /* VehicleLocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleLocationTableViewCell.swift; sourceTree = "<group>"; };
+		AE707BBB204D17C900A3288D /* SyllabusTrackerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllabusTrackerTableViewCell.swift; sourceTree = "<group>"; };
+		AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewCell.swift; sourceTree = "<group>"; };
+		AE707BC5204D17D000A3288D /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		AE707BC6204D17D000A3288D /* DriverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverData.swift; sourceTree = "<group>"; };
+		AE87017A204D2604000F9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE87017D204D2A52000F9033 /* Moschooling-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moschooling-Bridge-Header.h"; sourceTree = "<group>"; };
+		B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moschooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C899A971FD37CB0FC74A35A5 /* Pods-MoschoolingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDD6E2877F310355C72A37A2 /* Pods-MoschoolingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D46A71FC7E15B9180F72ACB4 /* Pods_MoschoolingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoschoolingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2712D62D1371F71A3A6818D /* Pods_MoschoolingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoschoolingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE202A1205268D0EDFC96AF6 /* Pods-Moschooling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moschooling.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE707B63204D153300A3288D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3CB1C35FF616952C619406 /* Pods_Moschooling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B77204D153400A3288D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091B8A3564841A921FAEA9EB /* Pods_MoschoolingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B82204D153400A3288D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAD553D5020680C47B2B9D7 /* Pods_MoschoolingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67444BA487ACCFA532D0C8ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */,
+				E2712D62D1371F71A3A6818D /* Pods_MoschoolingTests.framework */,
+				D46A71FC7E15B9180F72ACB4 /* Pods_MoschoolingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE707B5D204D153300A3288D = {
+			isa = PBXGroup;
+			children = (
+				AE707B68204D153300A3288D /* Moschooling */,
+				AE707B7D204D153400A3288D /* MoschoolingTests */,
+				AE707B88204D153400A3288D /* MoschoolingUITests */,
+				AE707B67204D153300A3288D /* Products */,
+				C87C4B228A7F50A9A2201530 /* Pods */,
+				67444BA487ACCFA532D0C8ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE707B67204D153300A3288D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE707B66204D153300A3288D /* Moschooling.app */,
+				AE707B7A204D153400A3288D /* MoschoolingTests.xctest */,
+				AE707B85204D153400A3288D /* MoschoolingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE707B68204D153300A3288D /* Moschooling */ = {
+			isa = PBXGroup;
+			children = (
+				AE707B69204D153400A3288D /* AppDelegate.swift */,
+				AE87017A204D2604000F9033 /* GoogleService-Info.plist */,
+				AE87017D204D2A52000F9033 /* Moschooling-Bridge-Header.h */,
+				AE354640205F9F6600197E6D /* ViewController.swift */,
+				AE707B9A204D159900A3288D /* Controller */,
+				AE707B99204D159200A3288D /* View */,
+				AE707B97204D157600A3288D /* Model */,
+				AE707B6D204D153400A3288D /* Main.storyboard */,
+				AE707B70204D153400A3288D /* Assets.xcassets */,
+				AE707B72204D153400A3288D /* LaunchScreen.storyboard */,
+				AE707B75204D153400A3288D /* Info.plist */,
+				AE707B9B204D166D00A3288D /* Schoolbus.png */,
+				187ACC062067E79B0069CA83 /* MainBGImg.png */,
+				187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */,
+				187ACC092067EA7E0069CA83 /* dashboardBarImg.png */,
+				187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */,
+				187ACC082067EA7E0069CA83 /* TrackerBarImg.png */,
+				AE707B9D204D166D00A3288D /* Bus.png */,
+				AE707B9E204D166D00A3288D /* Drivermen.png */,
+				187ACC022067E6F90069CA83 /* AttendanceBarimg.png */,
+				187ACC032067E6F90069CA83 /* SchoolBarImg.png */,
+				AE707B9C204D166D00A3288D /* Parents.png */,
+			);
+			path = Moschooling;
+			sourceTree = "<group>";
+		};
+		AE707B7D204D153400A3288D /* MoschoolingTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE707B7E204D153400A3288D /* MoschoolingTests.swift */,
+				AE707B80204D153400A3288D /* Info.plist */,
+			);
+			path = MoschoolingTests;
+			sourceTree = "<group>";
+		};
+		AE707B88204D153400A3288D /* MoschoolingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE707B89204D153400A3288D /* MoschoolingUITests.swift */,
+				AE707B8B204D153400A3288D /* Info.plist */,
+			);
+			path = MoschoolingUITests;
+			sourceTree = "<group>";
+		};
+		AE707B97204D157600A3288D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE707BC6204D17D000A3288D /* DriverData.swift */,
+				AE707BC5204D17D000A3288D /* UserDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE707B99204D159200A3288D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE707BB9204D17C100A3288D /* VehicleLocationTableViewCell.swift */,
+				186D5A6A204F0E83004FC225 /* StudentListTableViewCell.swift */,
+				AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */,
+				AE707BBB204D17C900A3288D /* SyllabusTrackerTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE707B9A204D159900A3288D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE707BA3204D16B600A3288D /* AccessCodeVC.swift */,
+				AE707BA5204D16CF00A3288D /* LoginVC.swift */,
+				186D5A68204F0C22004FC225 /* StudentListVC.swift */,
+				AE707BA7204D16E400A3288D /* SchoolBusVC.swift */,
+				AE707BA9204D170700A3288D /* AttendanceVC.swift */,
+				AE35462C205F9B5B00197E6D /* ImageCategory.swift */,
+				AE354630205F9B6400197E6D /* CustomTableViewCell.swift */,
+				AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */,
+				AE354635205F9B6B00197E6D /* CustomCollectionViewCell.swift */,
+				AE354634205F9B6A00197E6D /* CustomCollectionViewCell.xib */,
+				AE354638205F9B7000197E6D /* CustomHeaderView.swift */,
+				AE354639205F9B7100197E6D /* CustomHeaderView.xib */,
+				186A284620599C38008FD323 /* StudentsAttendanceTableViewCell.swift */,
+				186A284820599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift */,
+				AE707BAB204D172B00A3288D /* SyllabusTrackerVC.swift */,
+				AE707BAD204D173E00A3288D /* AssignmentVC.swift */,
+				AE707BAF204D178600A3288D /* AcademicVC.swift */,
+				AE707BB1204D17A500A3288D /* BaseViewController.swift */,
+				AE707BB4204D17AE00A3288D /* HomeVC.swift */,
+				AE707BB5204D17AE00A3288D /* MenuViewController.swift */,
+				AE707BB3204D17AD00A3288D /* PlayVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C87C4B228A7F50A9A2201530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE202A1205268D0EDFC96AF6 /* Pods-Moschooling.debug.xcconfig */,
+				76552C53754FA3536CC0B73C /* Pods-Moschooling.release.xcconfig */,
+				CDD6E2877F310355C72A37A2 /* Pods-MoschoolingTests.debug.xcconfig */,
+				C899A971FD37CB0FC74A35A5 /* Pods-MoschoolingTests.release.xcconfig */,
+				2BC5565538BDE3A66853F5B1 /* Pods-MoschoolingUITests.debug.xcconfig */,
+				3D8D4074C752CDA222AED714 /* Pods-MoschoolingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE707B65204D153300A3288D /* Moschooling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE707B8E204D153500A3288D /* Build configuration list for PBXNativeTarget "Moschooling" */;
+			buildPhases = (
+				22D0C34C430C789D2D13FE23 /* [CP] Check Pods Manifest.lock */,
+				AE707B62204D153300A3288D /* Sources */,
+				AE707B63204D153300A3288D /* Frameworks */,
+				AE707B64204D153300A3288D /* Resources */,
+				D69FBEB70393183B51CB38BB /* [CP] Embed Pods Frameworks */,
+				907F3A5060D357691746C5C2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moschooling;
+			productName = Moschooling;
+			productReference = AE707B66204D153300A3288D /* Moschooling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE707B79204D153400A3288D /* MoschoolingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE707B91204D153500A3288D /* Build configuration list for PBXNativeTarget "MoschoolingTests" */;
+			buildPhases = (
+				EF998587EFA5FA216A53D930 /* [CP] Check Pods Manifest.lock */,
+				AE707B76204D153400A3288D /* Sources */,
+				AE707B77204D153400A3288D /* Frameworks */,
+				AE707B78204D153400A3288D /* Resources */,
+				C18B81FEB82F3428E32748FB /* [CP] Embed Pods Frameworks */,
+				1A722CC34A0130C8DAE63BE0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE707B7C204D153400A3288D /* PBXTargetDependency */,
+			);
+			name = MoschoolingTests;
+			productName = MoschoolingTests;
+			productReference = AE707B7A204D153400A3288D /* MoschoolingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE707B84204D153400A3288D /* MoschoolingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE707B94204D153500A3288D /* Build configuration list for PBXNativeTarget "MoschoolingUITests" */;
+			buildPhases = (
+				F39EC69733F07D5E713B2D50 /* [CP] Check Pods Manifest.lock */,
+				AE707B81204D153400A3288D /* Sources */,
+				AE707B82204D153400A3288D /* Frameworks */,
+				AE707B83204D153400A3288D /* Resources */,
+				1B57FFFE82D5263DC10C6D0D /* [CP] Embed Pods Frameworks */,
+				F25B501ECA00259620B8753E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE707B87204D153400A3288D /* PBXTargetDependency */,
+			);
+			name = MoschoolingUITests;
+			productName = MoschoolingUITests;
+			productReference = AE707B85204D153400A3288D /* MoschoolingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE707B5E204D153300A3288D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Moschooling;
+				TargetAttributes = {
+					AE707B65204D153300A3288D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AE707B79204D153400A3288D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE707B65204D153300A3288D;
+					};
+					AE707B84204D153400A3288D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE707B65204D153300A3288D;
+					};
+				};
+			};
+			buildConfigurationList = AE707B61204D153300A3288D /* Build configuration list for PBXProject "Moschooling" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE707B5D204D153300A3288D;
+			productRefGroup = AE707B67204D153300A3288D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE707B65204D153300A3288D /* Moschooling */,
+				AE707B79204D153400A3288D /* MoschoolingTests */,
+				AE707B84204D153400A3288D /* MoschoolingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE707B64204D153300A3288D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187ACC0F2067EA7F0069CA83 /* dashboardBarImg.png in Resources */,
+				AE707BA2204D166E00A3288D /* Drivermen.png in Resources */,
+				AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */,
+				AE707BA1204D166E00A3288D /* Bus.png in Resources */,
+				187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */,
+				AE354636205F9B6B00197E6D /* CustomCollectionViewCell.xib in Resources */,
+				AE707BA0204D166E00A3288D /* Parents.png in Resources */,
+				AE707B74204D153400A3288D /* LaunchScreen.storyboard in Resources */,
+				187ACC072067E79B0069CA83 /* MainBGImg.png in Resources */,
+				AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */,
+				AE707B71204D153400A3288D /* Assets.xcassets in Resources */,
+				187ACC132067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png in Resources */,
+				187ACC052067E6F90069CA83 /* SchoolBarImg.png in Resources */,
+				187ACC042067E6F90069CA83 /* AttendanceBarimg.png in Resources */,
+				AE707B9F204D166E00A3288D /* Schoolbus.png in Resources */,
+				AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */,
+				187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */,
+				AE707B6F204D153400A3288D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B78204D153400A3288D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B83204D153400A3288D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A722CC34A0130C8DAE63BE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B57FFFE82D5263DC10C6D0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22D0C34C430C789D2D13FE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moschooling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907F3A5060D357691746C5C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C18B81FEB82F3428E32748FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69FBEB70393183B51CB38BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF998587EFA5FA216A53D930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoschoolingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25B501ECA00259620B8753E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39EC69733F07D5E713B2D50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoschoolingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE707B62204D153300A3288D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE707BB6204D17AE00A3288D /* PlayVC.swift in Sources */,
+				AE707BAC204D172B00A3288D /* SyllabusTrackerVC.swift in Sources */,
+				AE354637205F9B6B00197E6D /* CustomCollectionViewCell.swift in Sources */,
+				AE707BAA204D170700A3288D /* AttendanceVC.swift in Sources */,
+				AE707BA8204D16E400A3288D /* SchoolBusVC.swift in Sources */,
+				AE707B6A204D153400A3288D /* AppDelegate.swift in Sources */,
+				AE354633205F9B6400197E6D /* CustomTableViewCell.swift in Sources */,
+				AE707BC0204D17C900A3288D /* SyllabusTrackerTableViewCell.swift in Sources */,
+				AE354641205F9F6700197E6D /* ViewController.swift in Sources */,
+				AE35463A205F9B7100197E6D /* CustomHeaderView.swift in Sources */,
+				AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */,
+				186D5A6B204F0E83004FC225 /* StudentListTableViewCell.swift in Sources */,
+				AE707BC4204D17C900A3288D /* AssignmentTableViewCell.swift in Sources */,
+				AE707BB2204D17A500A3288D /* BaseViewController.swift in Sources */,
+				AE707BB8204D17AE00A3288D /* MenuViewController.swift in Sources */,
+				AE707BA6204D16CF00A3288D /* LoginVC.swift in Sources */,
+				186A284920599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift in Sources */,
+				AE707BC8204D17D000A3288D /* DriverData.swift in Sources */,
+				186D5A69204F0C22004FC225 /* StudentListVC.swift in Sources */,
+				AE707BC7204D17D000A3288D /* UserDetail.swift in Sources */,
+				AE707BA4204D16B600A3288D /* AccessCodeVC.swift in Sources */,
+				AE707BB7204D17AE00A3288D /* HomeVC.swift in Sources */,
+				AE707BBA204D17C100A3288D /* VehicleLocationTableViewCell.swift in Sources */,
+				AE707BAE204D173E00A3288D /* AssignmentVC.swift in Sources */,
+				186A284720599C38008FD323 /* StudentsAttendanceTableViewCell.swift in Sources */,
+				AE707BB0204D178600A3288D /* AcademicVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B76204D153400A3288D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE707B7F204D153400A3288D /* MoschoolingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE707B81204D153400A3288D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE707B8A204D153400A3288D /* MoschoolingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE707B7C204D153400A3288D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE707B65204D153300A3288D /* Moschooling */;
+			targetProxy = AE707B7B204D153400A3288D /* PBXContainerItemProxy */;
+		};
+		AE707B87204D153400A3288D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE707B65204D153300A3288D /* Moschooling */;
+			targetProxy = AE707B86204D153400A3288D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE707B6D204D153400A3288D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE707B6E204D153400A3288D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE707B72204D153400A3288D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE707B73204D153400A3288D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE707B8C204D153500A3288D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE707B8D204D153500A3288D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE707B8F204D153500A3288D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE202A1205268D0EDFC96AF6 /* Pods-Moschooling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = Moschooling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE707B90204D153500A3288D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76552C53754FA3536CC0B73C /* Pods-Moschooling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = Moschooling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE707B92204D153500A3288D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD6E2877F310355C72A37A2 /* Pods-MoschoolingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoschoolingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Moshcooling.MoschoolingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moschooling.app/Moschooling";
+			};
+			name = Debug;
+		};
+		AE707B93204D153500A3288D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C899A971FD37CB0FC74A35A5 /* Pods-MoschoolingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoschoolingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Moshcooling.MoschoolingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moschooling.app/Moschooling";
+			};
+			name = Release;
+		};
+		AE707B95204D153500A3288D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BC5565538BDE3A66853F5B1 /* Pods-MoschoolingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoschoolingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Moshcooling.MoschoolingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moschooling;
+			};
+			name = Debug;
+		};
+		AE707B96204D153500A3288D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8D4074C752CDA222AED714 /* Pods-MoschoolingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoschoolingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Moshcooling.MoschoolingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moschooling;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE707B61204D153300A3288D /* Build configuration list for PBXProject "Moschooling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE707B8C204D153500A3288D /* Debug */,
+				AE707B8D204D153500A3288D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE707B8E204D153500A3288D /* Build configuration list for PBXNativeTarget "Moschooling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE707B8F204D153500A3288D /* Debug */,
+				AE707B90204D153500A3288D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE707B91204D153500A3288D /* Build configuration list for PBXNativeTarget "MoschoolingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE707B92204D153500A3288D /* Debug */,
+				AE707B93204D153500A3288D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE707B94204D153500A3288D /* Build configuration list for PBXNativeTarget "MoschoolingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE707B95204D153500A3288D /* Debug */,
+				AE707B96204D153500A3288D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE707B5E204D153300A3288D /* Project object */;
+}
