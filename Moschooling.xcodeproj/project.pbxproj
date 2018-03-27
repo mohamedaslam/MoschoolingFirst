@@ -55,6 +55,8 @@
 		AE707BC7204D17D000A3288D /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC5204D17D000A3288D /* UserDetail.swift */; };
 		AE707BC8204D17D000A3288D /* DriverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC6204D17D000A3288D /* DriverData.swift */; };
 		AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE87017A204D2604000F9033 /* GoogleService-Info.plist */; };
+		AEE415BC206A63BD00B8ADA5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */; };
+		AEE415BE206A652E00B8ADA5 /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */; };
 		FA3CB1C35FF616952C619406 /* Pods_Moschooling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +134,8 @@
 		AE707BC6204D17D000A3288D /* DriverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverData.swift; sourceTree = "<group>"; };
 		AE87017A204D2604000F9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE87017D204D2A52000F9033 /* Moschooling-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moschooling-Bridge-Header.h"; sourceTree = "<group>"; };
+		AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerVC.swift; sourceTree = "<group>"; };
 		B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moschooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C899A971FD37CB0FC74A35A5 /* Pods-MoschoolingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests.release.xcconfig"; sourceTree = "<group>"; };
 		CDD6E2877F310355C72A37A2 /* Pods-MoschoolingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingTests/Pods-MoschoolingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +263,14 @@
 		AE707B99204D159200A3288D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE354630205F9B6400197E6D /* CustomTableViewCell.swift */,
+				AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */,
+				AE354635205F9B6B00197E6D /* CustomCollectionViewCell.swift */,
+				AE354634205F9B6A00197E6D /* CustomCollectionViewCell.xib */,
+				AE354638205F9B7000197E6D /* CustomHeaderView.swift */,
+				AE354639205F9B7100197E6D /* CustomHeaderView.xib */,
+				186A284620599C38008FD323 /* StudentsAttendanceTableViewCell.swift */,
+				186A284820599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift */,
 				AE707BB9204D17C100A3288D /* VehicleLocationTableViewCell.swift */,
 				186D5A6A204F0E83004FC225 /* StudentListTableViewCell.swift */,
 				AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */,
@@ -273,17 +285,11 @@
 				AE707BA3204D16B600A3288D /* AccessCodeVC.swift */,
 				AE707BA5204D16CF00A3288D /* LoginVC.swift */,
 				186D5A68204F0C22004FC225 /* StudentListVC.swift */,
+				AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */,
 				AE707BA7204D16E400A3288D /* SchoolBusVC.swift */,
 				AE707BA9204D170700A3288D /* AttendanceVC.swift */,
+				AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */,
 				AE35462C205F9B5B00197E6D /* ImageCategory.swift */,
-				AE354630205F9B6400197E6D /* CustomTableViewCell.swift */,
-				AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */,
-				AE354635205F9B6B00197E6D /* CustomCollectionViewCell.swift */,
-				AE354634205F9B6A00197E6D /* CustomCollectionViewCell.xib */,
-				AE354638205F9B7000197E6D /* CustomHeaderView.swift */,
-				AE354639205F9B7100197E6D /* CustomHeaderView.xib */,
-				186A284620599C38008FD323 /* StudentsAttendanceTableViewCell.swift */,
-				186A284820599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift */,
 				AE707BAB204D172B00A3288D /* SyllabusTrackerVC.swift */,
 				AE707BAD204D173E00A3288D /* AssignmentVC.swift */,
 				AE707BAF204D178600A3288D /* AcademicVC.swift */,
@@ -643,6 +649,7 @@
 				AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */,
 				186D5A6B204F0E83004FC225 /* StudentListTableViewCell.swift in Sources */,
 				AE707BC4204D17C900A3288D /* AssignmentTableViewCell.swift in Sources */,
+				AEE415BC206A63BD00B8ADA5 /* DashboardVC.swift in Sources */,
 				AE707BB2204D17A500A3288D /* BaseViewController.swift in Sources */,
 				AE707BB8204D17AE00A3288D /* MenuViewController.swift in Sources */,
 				AE707BA6204D16CF00A3288D /* LoginVC.swift in Sources */,
@@ -656,6 +663,7 @@
 				AE707BAE204D173E00A3288D /* AssignmentVC.swift in Sources */,
 				186A284720599C38008FD323 /* StudentsAttendanceTableViewCell.swift in Sources */,
 				AE707BB0204D178600A3288D /* AcademicVC.swift in Sources */,
+				AEE415BE206A652E00B8ADA5 /* TrackerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +835,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UWRJNNALTK;
 				INFOPLIST_FILE = Moschooling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -844,6 +853,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UWRJNNALTK;
 				INFOPLIST_FILE = Moschooling/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
