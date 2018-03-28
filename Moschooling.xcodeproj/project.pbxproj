@@ -18,7 +18,16 @@
 		187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC082067EA7E0069CA83 /* TrackerBarImg.png */; };
 		187ACC0F2067EA7F0069CA83 /* dashboardBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC092067EA7E0069CA83 /* dashboardBarImg.png */; };
 		187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */; };
-		187ACC132067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */; };
+		187ACC132067EA7F0069CA83 /* TrackerBarIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 187ACC0D2067EA7F0069CA83 /* TrackerBarIM.png */; };
+		187CD95B206C07DF00456E0E /* AssignmentBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD956206C07DD00456E0E /* AssignmentBarImage.png */; };
+		187CD95C206C07DF00456E0E /* dashboardBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD957206C07DD00456E0E /* dashboardBarImg.png */; };
+		187CD95D206C07DF00456E0E /* SchoolBarImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD958206C07DE00456E0E /* SchoolBarImg.png */; };
+		187CD95E206C07DF00456E0E /* AttendanceBarimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD959206C07DE00456E0E /* AttendanceBarimg.png */; };
+		187CD95F206C07DF00456E0E /* TrackerBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD95A206C07DE00456E0E /* TrackerBarImage.png */; };
+		187CD961206C081D00456E0E /* TrackerBarImag.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD960206C081D00456E0E /* TrackerBarImag.png */; };
+		187CD963206C097200456E0E /* AttendanceBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD962206C097200456E0E /* AttendanceBarImage.png */; };
+		187CD965206C0A2800456E0E /* AssignmentBarIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD964206C0A2700456E0E /* AssignmentBarIM.png */; };
+		187CD967206C0BBD00456E0E /* AttedanceBarIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD966206C0BBC00456E0E /* AttedanceBarIM.png */; };
 		4EAD553D5020680C47B2B9D7 /* Pods_MoschoolingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46A71FC7E15B9180F72ACB4 /* Pods_MoschoolingUITests.framework */; };
 		AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35462C205F9B5B00197E6D /* ImageCategory.swift */; };
 		AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE35462E205F9B6300197E6D /* CustomTableViewCell.xib */; };
@@ -88,7 +97,16 @@
 		187ACC082067EA7E0069CA83 /* TrackerBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackerBarImg.png; sourceTree = "<group>"; };
 		187ACC092067EA7E0069CA83 /* dashboardBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardBarImg.png; sourceTree = "<group>"; };
 		187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AssignmentBarImg.png; sourceTree = "<group>"; };
-		187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = if_map__location__navigation__mark__pin__lcation__gps_2528049.png; sourceTree = "<group>"; };
+		187ACC0D2067EA7F0069CA83 /* TrackerBarIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackerBarIM.png; sourceTree = "<group>"; };
+		187CD956206C07DD00456E0E /* AssignmentBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AssignmentBarImage.png; sourceTree = "<group>"; };
+		187CD957206C07DD00456E0E /* dashboardBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboardBarImg.png; sourceTree = "<group>"; };
+		187CD958206C07DE00456E0E /* SchoolBarImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SchoolBarImg.png; sourceTree = "<group>"; };
+		187CD959206C07DE00456E0E /* AttendanceBarimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttendanceBarimg.png; sourceTree = "<group>"; };
+		187CD95A206C07DE00456E0E /* TrackerBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackerBarImage.png; sourceTree = "<group>"; };
+		187CD960206C081D00456E0E /* TrackerBarImag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackerBarImag.png; sourceTree = "<group>"; };
+		187CD962206C097200456E0E /* AttendanceBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttendanceBarImage.png; sourceTree = "<group>"; };
+		187CD964206C0A2700456E0E /* AssignmentBarIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AssignmentBarIM.png; sourceTree = "<group>"; };
+		187CD966206C0BBC00456E0E /* AttedanceBarIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttedanceBarIM.png; sourceTree = "<group>"; };
 		2BC5565538BDE3A66853F5B1 /* Pods-MoschoolingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D8D4074C752CDA222AED714 /* Pods-MoschoolingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76552C53754FA3536CC0B73C /* Pods-Moschooling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moschooling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,9 +238,12 @@
 				AE707B75204D153400A3288D /* Info.plist */,
 				AE707B9B204D166D00A3288D /* Schoolbus.png */,
 				187ACC062067E79B0069CA83 /* MainBGImg.png */,
+				187CD966206C0BBC00456E0E /* AttedanceBarIM.png */,
 				187ACC0A2067EA7F0069CA83 /* AssignmentBarImg.png */,
+				187CD962206C097200456E0E /* AttendanceBarImage.png */,
 				187ACC092067EA7E0069CA83 /* dashboardBarImg.png */,
-				187ACC0D2067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png */,
+				187CD964206C0A2700456E0E /* AssignmentBarIM.png */,
+				187ACC0D2067EA7F0069CA83 /* TrackerBarIM.png */,
 				187ACC082067EA7E0069CA83 /* TrackerBarImg.png */,
 				AE707B9D204D166D00A3288D /* Bus.png */,
 				AE707B9E204D166D00A3288D /* Drivermen.png */,
@@ -297,6 +318,12 @@
 				AE707BB4204D17AE00A3288D /* HomeVC.swift */,
 				AE707BB5204D17AE00A3288D /* MenuViewController.swift */,
 				AE707BB3204D17AD00A3288D /* PlayVC.swift */,
+				187CD956206C07DD00456E0E /* AssignmentBarImage.png */,
+				187CD960206C081D00456E0E /* TrackerBarImag.png */,
+				187CD959206C07DE00456E0E /* AttendanceBarimg.png */,
+				187CD957206C07DD00456E0E /* dashboardBarImg.png */,
+				187CD958206C07DE00456E0E /* SchoolBarImg.png */,
+				187CD95A206C07DE00456E0E /* TrackerBarImage.png */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -432,21 +459,30 @@
 			files = (
 				187ACC0F2067EA7F0069CA83 /* dashboardBarImg.png in Resources */,
 				AE707BA2204D166E00A3288D /* Drivermen.png in Resources */,
+				187CD95B206C07DF00456E0E /* AssignmentBarImage.png in Resources */,
 				AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */,
 				AE707BA1204D166E00A3288D /* Bus.png in Resources */,
 				187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */,
 				AE354636205F9B6B00197E6D /* CustomCollectionViewCell.xib in Resources */,
 				AE707BA0204D166E00A3288D /* Parents.png in Resources */,
+				187CD967206C0BBD00456E0E /* AttedanceBarIM.png in Resources */,
 				AE707B74204D153400A3288D /* LaunchScreen.storyboard in Resources */,
 				187ACC072067E79B0069CA83 /* MainBGImg.png in Resources */,
 				AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */,
+				187CD95D206C07DF00456E0E /* SchoolBarImg.png in Resources */,
 				AE707B71204D153400A3288D /* Assets.xcassets in Resources */,
-				187ACC132067EA7F0069CA83 /* if_map__location__navigation__mark__pin__lcation__gps_2528049.png in Resources */,
+				187CD95F206C07DF00456E0E /* TrackerBarImage.png in Resources */,
+				187CD963206C097200456E0E /* AttendanceBarImage.png in Resources */,
+				187CD95C206C07DF00456E0E /* dashboardBarImg.png in Resources */,
+				187ACC132067EA7F0069CA83 /* TrackerBarIM.png in Resources */,
 				187ACC052067E6F90069CA83 /* SchoolBarImg.png in Resources */,
 				187ACC042067E6F90069CA83 /* AttendanceBarimg.png in Resources */,
 				AE707B9F204D166E00A3288D /* Schoolbus.png in Resources */,
 				AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */,
+				187CD961206C081D00456E0E /* TrackerBarImag.png in Resources */,
 				187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */,
+				187CD95E206C07DF00456E0E /* AttendanceBarimg.png in Resources */,
+				187CD965206C0A2800456E0E /* AssignmentBarIM.png in Resources */,
 				AE707B6F204D153400A3288D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,7 +875,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -857,7 +893,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Downloads/Moschooling-7/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

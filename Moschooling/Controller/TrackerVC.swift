@@ -14,7 +14,7 @@ class TrackerVC: BaseViewController {
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var calendarMenuView: CVCalendarMenuView!
     @IBOutlet weak var CalendarBGview: UIView!
-    @IBOutlet weak var weekDateNameLabel: UILabel!
+    @IBOutlet weak var weekDateNameLabel: UILabel?
     var firstweekday = String()
     var mondayweekday = String()
     var tuesdayweekday = String()
@@ -44,13 +44,13 @@ class TrackerVC: BaseViewController {
         super.viewDidLoad()
         addSlideMenuButton()
         let tap = UITapGestureRecognizer(target: self, action: #selector(AttendanceVC.tapFunction))
-        weekDateNameLabel.isUserInteractionEnabled = true
-        weekDateNameLabel.addGestureRecognizer(tap)
+        weekDateNameLabel?.isUserInteractionEnabled = true
+        weekDateNameLabel?.addGestureRecognizer(tap)
         
-        weekDateNameLabel.layer.masksToBounds = true;
-        weekDateNameLabel.layer.cornerRadius = 20.0;
-        weekDateNameLabel.layer.borderColor = UIColor.green.cgColor
-        weekDateNameLabel.layer.borderWidth = 2;
+        weekDateNameLabel?.layer.masksToBounds = true;
+        weekDateNameLabel?.layer.cornerRadius = 20.0;
+        weekDateNameLabel?.layer.borderColor = UIColor.green.cgColor
+        weekDateNameLabel?.layer.borderWidth = 2;
         // Do any additional setup after loading the view.
     }
     @objc func tapFunction(sender:UITapGestureRecognizer) {
@@ -95,10 +95,10 @@ class TrackerVC: BaseViewController {
 
         
         print(index)
-        self.weekDateNameLabel.layer.masksToBounds = true;
-        self.weekDateNameLabel.layer.cornerRadius = 20.0;
-        self.weekDateNameLabel.layer.borderColor = UIColor.green.cgColor
-        self.weekDateNameLabel.text = firstweekname + tostr + lastweekname
+        self.weekDateNameLabel?.layer.masksToBounds = true;
+        self.weekDateNameLabel?.layer.cornerRadius = 20.0;
+        self.weekDateNameLabel?.layer.borderColor = UIColor.green.cgColor
+        self.weekDateNameLabel?.text = firstweekname + tostr + lastweekname
         print("stdAbsentWithOutApproveArrayData")
         print("self.sundayarraydata")
         return data
@@ -128,7 +128,8 @@ class TrackerVC: BaseViewController {
             lastweekname = lastdateFormatter.string(from: lastdate)
         }
         
-        
+        self.weekDateNameLabel?.text = firstweekname + tostr + lastweekname
+
         
         let DefaultFormat = "T00:00:00+05:30";
         Onlydatefirstweekday = Onlydatefirstweekday + DefaultFormat;
