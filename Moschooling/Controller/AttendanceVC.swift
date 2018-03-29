@@ -117,7 +117,7 @@ class AttendanceVC:  BaseViewController,UICircularProgressRingDelegate {
     
         weekDateNameLabel.layer.masksToBounds = true;
         weekDateNameLabel.layer.cornerRadius = 20.0;
-        weekDateNameLabel.layer.borderColor = UIColor.green.cgColor
+        weekDateNameLabel.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
         weekDateNameLabel.layer.borderWidth = 2;
         // Do any additional setup after loading the view.
     }
@@ -183,8 +183,8 @@ class AttendanceVC:  BaseViewController,UICircularProgressRingDelegate {
         ring2.delegate = self
         ring2.fontColor = UIColor.gray
 
-        ring2.innerRingColor = UIColor.green
-        ring2.outerRingColor = UIColor.green
+        ring2.innerRingColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0)
+        ring2.outerRingColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0)
         var a : Double = Double(self.stdPresentArrayData.count)
         var b : Double = Double(self.stdAbsentApproveArrayData.count) + Double(self.stdPresentArrayData.count)
         var c = ceil((a/b)*100)
@@ -208,7 +208,7 @@ class AttendanceVC:  BaseViewController,UICircularProgressRingDelegate {
         }
         self.weekDateNameLabel.layer.masksToBounds = true;
         self.weekDateNameLabel.layer.cornerRadius = 20.0;
-        self.weekDateNameLabel.layer.borderColor = UIColor.green.cgColor
+        self.weekDateNameLabel.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
         self.weekDateNameLabel.text = firstweekname + tostr + lastweekname
         print("stdAbsentWithOutApproveArrayData")
         print("self.sundayarraydata")

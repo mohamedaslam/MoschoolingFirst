@@ -28,10 +28,6 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
     @IBOutlet weak var careTakerNameLabel: UILabel!
     @IBOutlet weak var driverImageView: UIImageView!
     @IBOutlet weak var careTakerImageView: UIImageView!
-    
-    
-    
-    
     //.updateChildValues(["locationTimestamp": "1520792794780"])
     //myRef.orderByChild("locationTimestamp").startAt(timeStamp).limitToLast(15).addChildEventListene
     func getDiffernce(toTime:Date) -> Int{
@@ -54,13 +50,11 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
             .queryStarting(atValue: 1520873630868)
             .queryLimited(toLast: 5)
             .observe(.value, with: { snapshot in
-
            // .observeSingleEvent(of: .value, with: { snapshot in
                //  2
                             var newItems: [DriverData] = []
                             print(newItems)
                             print("newItems")
-                
                             // 3
                             for item in snapshot.children {
                                 // 4
@@ -68,9 +62,7 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
                                 newItems.append(groceryItem)
                                 print(groceryItem)
                                 print("GGgroceryItem")
-                
                             }
-                
                             // 5
                             self.items = newItems
                             self.vehicleLocationTableview .reloadData()

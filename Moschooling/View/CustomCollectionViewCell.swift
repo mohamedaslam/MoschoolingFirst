@@ -54,7 +54,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         print(status)
         print("Statusss")
         if(status == "STUDENT_PRESENT"){
-        self.MarkingTimeLabel.backgroundColor = UIColor.green
+        self.MarkingTimeLabel.backgroundColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0)
        
         self.MarkingTimeLabel.backgroundColor = UIColor(red: 117/255.0, green: 223/255.0, blue: 174/255.0, alpha: 1.0)
         }else{
