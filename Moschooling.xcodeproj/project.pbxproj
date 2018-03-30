@@ -29,6 +29,9 @@
 		187CD965206C0A2800456E0E /* AssignmentBarIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD964206C0A2700456E0E /* AssignmentBarIM.png */; };
 		187CD967206C0BBD00456E0E /* AttedanceBarIM.png in Resources */ = {isa = PBXBuildFile; fileRef = 187CD966206C0BBC00456E0E /* AttedanceBarIM.png */; };
 		4EAD553D5020680C47B2B9D7 /* Pods_MoschoolingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46A71FC7E15B9180F72ACB4 /* Pods_MoschoolingUITests.framework */; };
+		AE20123F206E129A00BDE866 /* AssignmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE20123E206E129A00BDE866 /* AssignmentData.swift */; };
+		AE201242206E21E200BDE866 /* imageIM.png in Resources */ = {isa = PBXBuildFile; fileRef = AE201240206E21E100BDE866 /* imageIM.png */; };
+		AE201243206E21E200BDE866 /* attachmentIM.png in Resources */ = {isa = PBXBuildFile; fileRef = AE201241206E21E100BDE866 /* attachmentIM.png */; };
 		AE2F23EC206CC34D003113DF /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2F23EA206CC34C003113DF /* downarrow.png */; };
 		AE2F23ED206CC34D003113DF /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2F23EB206CC34D003113DF /* uparrow.png */; };
 		AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35462C205F9B5B00197E6D /* ImageCategory.swift */; };
@@ -112,6 +115,9 @@
 		2BC5565538BDE3A66853F5B1 /* Pods-MoschoolingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D8D4074C752CDA222AED714 /* Pods-MoschoolingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoschoolingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoschoolingUITests/Pods-MoschoolingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76552C53754FA3536CC0B73C /* Pods-Moschooling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moschooling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moschooling/Pods-Moschooling.release.xcconfig"; sourceTree = "<group>"; };
+		AE20123E206E129A00BDE866 /* AssignmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentData.swift; sourceTree = "<group>"; };
+		AE201240206E21E100BDE866 /* imageIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageIM.png; sourceTree = "<group>"; };
+		AE201241206E21E100BDE866 /* attachmentIM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attachmentIM.png; sourceTree = "<group>"; };
 		AE2F23EA206CC34C003113DF /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
 		AE2F23EB206CC34D003113DF /* uparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uparrow.png; sourceTree = "<group>"; };
 		AE35462C205F9B5B00197E6D /* ImageCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCategory.swift; sourceTree = "<group>"; };
@@ -280,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				AE707BC6204D17D000A3288D /* DriverData.swift */,
+				AE20123E206E129A00BDE866 /* AssignmentData.swift */,
 				AE707BC5204D17D000A3288D /* UserDetail.swift */,
 			);
 			path = Model;
@@ -330,6 +337,8 @@
 				187CD957206C07DD00456E0E /* dashboardBarImg.png */,
 				187CD958206C07DE00456E0E /* SchoolBarImg.png */,
 				187CD95A206C07DE00456E0E /* TrackerBarImage.png */,
+				AE201241206E21E100BDE866 /* attachmentIM.png */,
+				AE201240206E21E100BDE866 /* imageIM.png */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,10 +479,12 @@
 				AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */,
 				AE707BA1204D166E00A3288D /* Bus.png in Resources */,
 				187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */,
+				AE201243206E21E200BDE866 /* attachmentIM.png in Resources */,
 				AE2F23ED206CC34D003113DF /* uparrow.png in Resources */,
 				AE354636205F9B6B00197E6D /* CustomCollectionViewCell.xib in Resources */,
 				AE707BA0204D166E00A3288D /* Parents.png in Resources */,
 				187CD967206C0BBD00456E0E /* AttedanceBarIM.png in Resources */,
+				AE201242206E21E200BDE866 /* imageIM.png in Resources */,
 				AE707B74204D153400A3288D /* LaunchScreen.storyboard in Resources */,
 				187ACC072067E79B0069CA83 /* MainBGImg.png in Resources */,
 				AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */,
@@ -690,6 +701,7 @@
 				AE707BC0204D17C900A3288D /* SyllabusTrackerTableViewCell.swift in Sources */,
 				AE354641205F9F6700197E6D /* ViewController.swift in Sources */,
 				AE35463A205F9B7100197E6D /* CustomHeaderView.swift in Sources */,
+				AE20123F206E129A00BDE866 /* AssignmentData.swift in Sources */,
 				AE35462D205F9B5B00197E6D /* ImageCategory.swift in Sources */,
 				186D5A6B204F0E83004FC225 /* StudentListTableViewCell.swift in Sources */,
 				AE707BC4204D17C900A3288D /* AssignmentTableViewCell.swift in Sources */,
@@ -883,7 +895,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Desktop/MoschoolingFirst/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -901,7 +913,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Desktop/MoschoolingFirst/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

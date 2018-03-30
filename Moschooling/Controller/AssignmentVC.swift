@@ -10,7 +10,7 @@ import UIKit
 import CVCalendar
 import Alamofire
 import SwiftyJSON
-class AssignmentVC: BaseViewController {
+class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var calendarMenuView: CVCalendarMenuView!
     @IBOutlet weak var CalendarBGview: UIView!
@@ -24,7 +24,9 @@ class AssignmentVC: BaseViewController {
     var thursdayweekday = String()
     var fridayweekday = String()
     var lastweekday = String()
-    
+    var items: [AssignmentData] = []
+
+    @IBOutlet weak var AssignmentTableView: UITableView!
     var shouldShowDaysOut = true
     var animationFinished = true
     var selectedDay:DayView!
@@ -61,6 +63,29 @@ class AssignmentVC: BaseViewController {
         super.viewDidLoad()
         addSlideMenuButton()
         self.duedateBGview.isHidden = true
+        let ref = Database.database().reference(withPath: "Assignments").child("1066").child("114")
+        let _ = ref
+            .queryOrdered(byChild: "createdDate")
+            .queryStarting(atValue: 1522345294019)
+            .queryLimited(toLast: 5)
+            .observe(.value, with: { snapshot in
+                // .observeSingleEvent(of: .value, with: { snapshot in
+                //  2
+             var newItems: [AssignmentData] = []
+              //  print(newItems)
+                print("newItems")
+                // 3
+                for item in snapshot.children {
+                    // 4
+                    let groceryItem = AssignmentData(snapshot: item as! DataSnapshot)
+                   newItems.append(groceryItem)
+                    print(groceryItem)
+                    print("GGgroceryItem")
+                }
+                // 5
+                self.items = newItems
+                self.AssignmentTableView .reloadData()
+            })
         let tap = UITapGestureRecognizer(target: self, action: #selector(AttendanceVC.tapFunction))
         weekDateNameLabel?.isUserInteractionEnabled = true
         weekDateNameLabel?.addGestureRecognizer(tap)
@@ -85,6 +110,8 @@ class AssignmentVC: BaseViewController {
         // Commit frames' updates
         self.calendarView.commitCalendarViewUpdate()
         self.calendarMenuView.commitMenuViewUpdate()
+        AssignmentTableView.delegate = self
+        AssignmentTableView.dataSource = self
         CalendarBGview.isHidden = true
         
         if let currentCalendar = currentCalendar {
@@ -158,7 +185,54 @@ class AssignmentVC: BaseViewController {
         
         
     }
+    // MARK: UITableView Delegate methods
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AssignmentTableViewCell", for: indexPath) as! AssignmentTableViewCell
+        let groceryItem = items[indexPath.row]
+ 
+        cell.TeacherNameLabel?.text = groceryItem.teacherName
+        cell.taskTittleLabel?.text = groceryItem.taskTittle
+        cell.descriptionLabel?.text = groceryItem.description
+      //  cell.taskDate?.text = groceryItem.taskDate
+        cell.subjectNameLabel?.text = groceryItem.taskType
+        let dateVar = Date.init(timeIntervalSinceNow: TimeInterval(groceryItem.createdDate)/1000)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MMM-yy hh:mm a"
+        print(dateFormatter.string(from: dateVar))
+        cell.createdDateLabel?.text = dateFormatter.string(from: dateVar)
+     //
+        let taskdateVar = Date.init(timeIntervalSinceNow: TimeInterval(groceryItem.taskDate)/1000)
+        let taskdateFormatter = DateFormatter()
+        taskdateFormatter.dateFormat = "dd-MMM-yyyy"
+        print(taskdateFormatter.string(from: taskdateVar))
+        cell.taskDate?.text = taskdateFormatter.string(from: taskdateVar)
+        
+
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 132.0;//Choose your custom row height
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let groceryItem = items[indexPath.row]
+            groceryItem.ref?.removeValue()
+        }
+        //    if editingStyle == .delete {
+        //      items.remove(at: indexPath.row)
+        //      tableView.reloadData()
+        //    }
+    }
     /*
      // MARK: - Navigation
      
@@ -404,3 +478,17 @@ extension AssignmentVC {
     
     
 }
+/*
+ AssignmentData(
+ Status: 1030.0,
+ createdDate: 1522345294019.0,
+ description: "please study chapter 7",
+ imagepathOne: "https://firebasestorage.googleapis.com/v0/b/moschooling-1479724747505.appspot.com/o/Assignment%2F1066%2F114%2F10782?alt=media&token=89326ab7-9cae-4bfe-b622-b0ad37a1e0b6",
+ subjectID: 9.0,
+ taskDate: 1522345253379.0,
+ taskTittle: "Test for aslam",
+ taskType: "Mathematics",
+ teacherName: "Jose Mathew",
+ userID: 66.0,
+ ref: Optional(https://moschooling-1479724747505.firebaseio.com/Assignments/1066/114/-L8mqQT2fR4hmcubuOkq))
+ */

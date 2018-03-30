@@ -10,6 +10,12 @@ import UIKit
 
 class AssignmentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var subjectNameLabel: UILabel!
+    @IBOutlet weak var taskDate: UILabel!
+    @IBOutlet weak var createdDateLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var taskTittleLabel: UILabel!
+    @IBOutlet weak var TeacherNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
