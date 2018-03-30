@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
         //["tokenAccesscode": accesscodetextfield.text ?? " "]
         //["username":"test14@gmail.com","password":"test123","schoolID": 1066]
         //["username":usernameTextField.text ?? " ","password":passwordTextField.text ?? " ","schoolID": SchoolIDstr]
-        Alamofire.request("https://school.moschooling.com/API/login", method:.post, parameters: ["username":"test14@gmail.com","password":"test123","schoolID": 1066], encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request("https://school.moschooling.com/API/login", method:.post, parameters: ["username":"testm8@gmail.com","password":"test","schoolID": 1066], encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):

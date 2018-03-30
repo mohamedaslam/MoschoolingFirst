@@ -97,7 +97,7 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
      
         ///////////?GetVehicle student info
         
-        Alamofire.request("https://school.moschooling.com/api/getStudentvehicleInfo", method: .get, parameters: ["studentID": 198], encoding: URLEncoding.default, headers: ["UserID":"92"]).responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request("https://school.moschooling.com/api/getStudentvehicleInfo", method: .get, parameters: ["studentID": 198], encoding: URLEncoding.default, headers: ["UserID":"102"]).responseJSON { (response:DataResponse<Any>) in
             // Alamofire.request("https://school.moschooling.com/API/GetParentChildren", method : .post, parameters:["UserID":92], encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
@@ -220,7 +220,7 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
         //        "VehicleID": 5,
         //        "busDate": "2018-02-22T10:09:12.578Z"
         Alamofire.request("https://school.moschooling.com/API/getvehicleStatus", method: .post, parameters: ["VehicleID": 5 ,"busDate": "2018-03-11T00:00:00+05:30"
-            ], encoding: JSONEncoding.default, headers:["UserID":"92"]).responseJSON { (response:DataResponse<Any>) in
+            ], encoding: JSONEncoding.default, headers:["UserID":"102"]).responseJSON { (response:DataResponse<Any>) in
                 // Alamofire.request("https://school.moschooling.com/API/GetParentChildren", method : .post, parameters:["UserID":92], encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
                 
                 switch(response.result) {

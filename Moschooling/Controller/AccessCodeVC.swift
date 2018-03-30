@@ -21,7 +21,7 @@ class AccessCodeVC: UIViewController  {
     var arrRes = [[String:AnyObject]]() //Array of dictionary
     @IBAction func submitbnt(_ sender: Any)
     {
-        //E-1066-TGMJ"
+        //E-1066-TGMJ"E-1066-TGMJ
         // ["tokenAccesscode": accesscodetextfield.text ?? " "]
         Alamofire.request("https://school.moschooling.com/API/verifyaccesscode?", method: .get, parameters: ["tokenAccesscode": "E-1066-TGMJ"], encoding: URLEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
             

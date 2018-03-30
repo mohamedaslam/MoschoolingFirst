@@ -102,7 +102,7 @@ class AttendanceVC:  BaseViewController,UICircularProgressRingDelegate {
         self.ring2.ringStyle = UICircularProgressRingStyle(rawValue: 2)!
 
    
-        Alamofire.request("https://school.moschooling.com/API/GetStudentWeekAttendance", method: .post, parameters: ["StudentID":198,"UserID":92,"StartDate": "2018-03-05T00:00:00+05:30","EndDate": "2018-03-09T00:00:00+05:30"], encoding: JSONEncoding.default, headers:["UserID":"92"]).responseJSON { (responseData) -> Void in
+        Alamofire.request("https://school.moschooling.com/API/GetStudentWeekAttendance", method: .post, parameters: ["StudentID":198,"UserID":102,"StartDate": "2018-03-05T00:00:00+05:30","EndDate": "2018-03-09T00:00:00+05:30"], encoding: JSONEncoding.default, headers:["UserID":"102"]).responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print(swiftyJsonVar)
@@ -290,7 +290,7 @@ class AttendanceVC:  BaseViewController,UICircularProgressRingDelegate {
         print(Onlydatefirstweekday)
         print(Onlydatelastweekday)
         
-        Alamofire.request("https://school.moschooling.com/API/GetStudentWeekAttendance", method: .post, parameters: ["StudentID":198,"UserID":92,"StartDate": Onlydatefirstweekday,"EndDate": Onlydatelastweekday], encoding: JSONEncoding.default, headers:["UserID":"92"]).responseJSON { (responseData) -> Void in
+        Alamofire.request("https://school.moschooling.com/API/GetStudentWeekAttendance", method: .post, parameters: ["StudentID":198,"UserID":102,"StartDate": Onlydatefirstweekday,"EndDate": Onlydatelastweekday], encoding: JSONEncoding.default, headers:["UserID":"102"]).responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print(swiftyJsonVar)

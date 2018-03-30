@@ -17,7 +17,7 @@ class StudentListVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        Alamofire.request("https://school.moschooling.com/API/GetParentChildren", method: .post, parameters: nil, encoding: JSONEncoding.default, headers:["UserID":"92"]).responseJSON { (responseData) -> Void in
+        Alamofire.request("https://school.moschooling.com/API/GetParentChildren", method: .post, parameters: nil, encoding: JSONEncoding.default, headers:["UserID":"107"]).responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 

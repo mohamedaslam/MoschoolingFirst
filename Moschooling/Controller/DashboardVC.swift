@@ -21,26 +21,26 @@ class DashboardVC: BaseViewController {
         requestLeaveBtn.layer.masksToBounds = true;
         requestLeaveBtn.layer.cornerRadius = 8.0;
         requestLeaveBtn.layer.borderColor = UIColor.red.cgColor
-        requestLeaveBtn.layer.borderWidth = 2;
+        requestLeaveBtn.layer.borderWidth = 1;
         updateProfilebtn.layer.masksToBounds = true;
         updateProfilebtn.layer.cornerRadius = 8.0;
         updateProfilebtn.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
-        updateProfilebtn.layer.borderWidth = 2;
+        updateProfilebtn.layer.borderWidth = 1;
         ///////////
         MessageViewAllBtn.layer.masksToBounds = true;
         MessageViewAllBtn.layer.cornerRadius = 8.0;
         MessageViewAllBtn.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
-        MessageViewAllBtn.layer.borderWidth = 2;
+        MessageViewAllBtn.layer.borderWidth = 1;
         //////
         AssignmentsViewAllbtn.layer.masksToBounds = true;
         AssignmentsViewAllbtn.layer.cornerRadius = 8.0;
         AssignmentsViewAllbtn.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
-        AssignmentsViewAllbtn.layer.borderWidth = 2;
+        AssignmentsViewAllbtn.layer.borderWidth = 1;
         ////////
         ReviewViewAllbtn.layer.masksToBounds = true;
         ReviewViewAllbtn.layer.cornerRadius = 8.0;
         ReviewViewAllbtn.layer.borderColor = UIColor(red: 117/255.0, green: 167/255.0, blue: 87/255.0, alpha: 1.0).cgColor
-        ReviewViewAllbtn.layer.borderWidth = 2;
+        ReviewViewAllbtn.layer.borderWidth = 1;
         // Do any additional setup after loading the view.
     }
 
