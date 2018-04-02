@@ -1224,9 +1224,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xne-T4-XaX">
+                                <rect key="frame" x="25" y="93" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="CvW-nM-vPD"/>
+                                    <constraint firstAttribute="height" constant="21" id="TUn-O6-l8c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xne-T4-XaX" firstAttribute="leading" secondItem="HlQ-C0-EKM" secondAttribute="leading" constant="25" id="A60-jQ-7qp"/>
                             <constraint firstItem="HlQ-C0-EKM" firstAttribute="trailing" secondItem="cCm-KM-YwQ" secondAttribute="trailing" constant="8" id="BPD-7q-IPo"/>
                             <constraint firstItem="cCm-KM-YwQ" firstAttribute="leading" secondItem="kvT-La-PAd" secondAttribute="trailing" id="GE7-bg-r68"/>
                             <constraint firstItem="Jb5-i2-rjt" firstAttribute="top" secondItem="kvT-La-PAd" secondAttribute="bottom" constant="12" id="Hz5-XM-WnJ"/>
@@ -1242,6 +1253,7 @@
                             <constraint firstItem="oTu-qT-ll7" firstAttribute="trailing" secondItem="HlQ-C0-EKM" secondAttribute="trailing" id="gvl-LW-4WJ"/>
                             <constraint firstItem="Jb5-i2-rjt" firstAttribute="top" secondItem="cCm-KM-YwQ" secondAttribute="bottom" constant="10" id="m4B-Rb-Q1u"/>
                             <constraint firstItem="HlQ-C0-EKM" firstAttribute="trailing" secondItem="53i-VB-b66" secondAttribute="trailing" constant="4" id="v8q-hS-RHx"/>
+                            <constraint firstItem="Jb5-i2-rjt" firstAttribute="top" secondItem="xne-T4-XaX" secondAttribute="bottom" constant="8" id="xFI-E3-3DQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HlQ-C0-EKM"/>
                     </view>
@@ -1252,6 +1264,7 @@
                         <outlet property="calendarMenuView" destination="sTw-9T-A7J" id="bOO-1y-Pp9"/>
                         <outlet property="calendarView" destination="2e3-An-Yxh" id="5ne-lc-USq"/>
                         <outlet property="duedateBGview" destination="oTu-qT-ll7" id="lex-Wc-jKZ"/>
+                        <outlet property="monthLabel" destination="xne-T4-XaX" id="bWa-BQ-JWY"/>
                         <outlet property="upDownArrowImg" destination="cCm-KM-YwQ" id="XHX-Ip-K59"/>
                         <outlet property="weekDateNameLabel" destination="oPp-LC-Jw3" id="GfK-yN-l8o"/>
                     </connections>

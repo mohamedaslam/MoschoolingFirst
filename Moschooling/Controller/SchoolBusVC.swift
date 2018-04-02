@@ -30,14 +30,16 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
     @IBOutlet weak var careTakerImageView: UIImageView!
     //.updateChildValues(["locationTimestamp": "1520792794780"])
     //myRef.orderByChild("locationTimestamp").startAt(timeStamp).limitToLast(15).addChildEventListene
-    func getDiffernce(toTime:Date) -> Int{
-        let elapsed = NSDate().timeIntervalSince(toTime)
-        return Int(elapsed * 1000)
+    func getDiffernce(toTime:Date) ->  Int64{
+        let nowDouble = NSDate().timeIntervalSince1970
+        return Int64(nowDouble*1000)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         let strDate = "2018-03-11T00:00:00+05:30"
         let dateFormatter = DateFormatter()
+     //   dateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
+
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         let date = dateFormatter.date(from: strDate)
         print(date!)
@@ -2737,4 +2739,5 @@ class SchoolBusVC: BaseViewController,UITableViewDelegate,UITableViewDataSource 
      */
     
 }
+
 
