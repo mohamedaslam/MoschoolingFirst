@@ -12,10 +12,31 @@ import SwiftyJSON
 
 class AccessCodeVC: UIViewController  {
     @IBOutlet weak var accesscodetextfield: UITextField!
-    
+    func getDiffernce(toTime:Date) -> Int64{
+        let nowDouble = NSDate().timeIntervalSince1970
+        return Int64(nowDouble*1000)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let startstrDate = "2018-03-29T05:40:00+05:30"//Tue Apr 03 2018 00:19:56
+        let startdateFormatter = DateFormatter()
+        startdateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        startdateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
+        let startdate = startdateFormatter.date(from: startstrDate)
+        print(startdate!)
+        let startmillieseconds = self.getDiffernce(toTime: startdate!)
+        print(startmillieseconds)
+        print("startmillieseconds")
+        let endstrDate = "2018-03-29T23:59:00+05:30"
+        let enddateFormatter = DateFormatter()
+        enddateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        let enddate = enddateFormatter.date(from: endstrDate)
+        enddateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
         
+        print(enddate!)
+        let endmillieseconds = self.getDiffernce(toTime: enddate!)
+        print(endmillieseconds)
+        print("endmillieseconds")
         // Do any additional setup after loading the view.
     }
     var arrRes = [[String:AnyObject]]() //Array of dictionary

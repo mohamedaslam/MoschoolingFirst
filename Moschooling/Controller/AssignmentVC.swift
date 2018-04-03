@@ -60,7 +60,7 @@ class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource
         }
     }
     func getDiffernce(toTime:Date) -> Int64{
-        let nowDouble = NSDate().timeIntervalSince1970
+        let nowDouble = toTime.timeIntervalSince1970
         return Int64(nowDouble*1000)
     }
     override func viewDidLoad() {
@@ -68,7 +68,7 @@ class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource
         addSlideMenuButton()
         self.duedateBGview.isHidden = true
         items.removeAll()
-        let startstrDate = "2018-03-29T10zz:10:40+05:30"//Tue Apr 03 2018 00:19:56
+        let startstrDate = "2018-03-29T05:40:00+05:30"//Tue Apr 03 2018 00:19:56
         let startdateFormatter = DateFormatter()
         startdateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         startdateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
@@ -77,7 +77,7 @@ class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource
         let startmillieseconds = self.getDiffernce(toTime: startdate!)
         print(startmillieseconds)
         print("startmillieseconds")
-        let endstrDate = "2018-03-29T11:59:00+05:30"
+        let endstrDate = "2018-03-29T23:59:00+05:30"
         let enddateFormatter = DateFormatter()
         enddateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         let enddate = enddateFormatter.date(from: endstrDate)
@@ -87,30 +87,7 @@ class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource
         let endmillieseconds = self.getDiffernce(toTime: enddate!)
         print(endmillieseconds)
         print("endmillieseconds")
-        let ref = Database.database().reference(withPath: "Assignments").child("1066").child("114")
-        let _ = ref
-            .queryOrdered(byChild: "createdDate")
-            .queryStarting(atValue: 1522286148249)//Thu Mar 29 2018 23:11:34
-            .queryEnding(atValue: 1522345294019)//1522672258000
-            .queryLimited(toLast: 5)
-            .observe(.value, with: { snapshot in
-                // .observeSingleEvent(of: .value, with: { snapshot in
-                //  2
-             var newItems: [AssignmentData] = []
-              //  print(newItems)
-                print("newItems")
-                // 3
-                for item in snapshot.children {
-                    // 4
-                    let groceryItem = AssignmentData(snapshot: item as! DataSnapshot)
-                   newItems.append(groceryItem)
-                    print(groceryItem)
-                    print("GGgroceryItem")
-                }
-                // 5
-                self.items = newItems
-                self.AssignmentTableView .reloadData()
-            })
+       
         let tap = UITapGestureRecognizer(target: self, action: #selector(AttendanceVC.tapFunction))
         weekDateNameLabel?.isUserInteractionEnabled = true
         weekDateNameLabel?.addGestureRecognizer(tap)
@@ -137,7 +114,7 @@ class AssignmentVC: BaseViewController,UITableViewDelegate,UITableViewDataSource
         self.calendarMenuView.commitMenuViewUpdate()
         AssignmentTableView.delegate = self
         AssignmentTableView.dataSource = self
-        CalendarBGview.isHidden = true
+        CalendarBGview.isHidden = false
         
         if let currentCalendar = currentCalendar {
             //monthLabel.text = CVDate(date: Date(), calendar: currentCalendar).globalDescription
@@ -289,9 +266,78 @@ extension AssignmentVC: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         return false
     }
     
+    
+    // input string should always be in format "21/07/2016" ("dd/MM/yyyy")
+    
+    func formattedDateFromString(dateString: String, withFormat format: String) -> String? {
+        
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "dd MMMM,yyyy"
+        
+        if let date = inputFormatter.date(from: dateString) {
+            
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = format
+            
+            return outputFormatter.string(from: date)
+        }
+        
+        return nil
+    }
     func didSelectDayView(_ dayView: DayView, animationDidFinish: Bool) {
         print("ONLYYRANGE SELECTED: \(dayView.date.commonDescription)")
-        CalendarBGview.isHidden = true
+        let getonlyDate = formattedDateFromString(dateString: dayView.date.commonDescription, withFormat: "yyyy-MM-dd")
+        print(getonlyDate ?? "<#default value#>")
+        let startstrDate = "T05:40:00+05:30"//Tue Apr 03 2018 00:19:56
+        //let startstrDate = "T05:40:00+05:30"//Tue Apr 03 2018 00:19:56
+        let startdatetime = getonlyDate!+startstrDate
+
+        let startdateFormatter = DateFormatter()
+        startdateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        startdateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
+        let startdate = startdateFormatter.date(from: startdatetime)
+        print(startdate!)
+        let startmillieseconds = self.getDiffernce(toTime: startdate!)
+        print(startmillieseconds)
+        print("startmillieseconds")
+    
+        let endstrDate = "T23:59:00+05:30"
+        let enddateFormatter = DateFormatter()
+        enddateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        let enddatetime = getonlyDate!+endstrDate
+
+        let enddate = enddateFormatter.date(from: enddatetime)
+        enddateFormatter.timeZone = (NSTimeZone(name: "UTC") as NSTimeZone!) as TimeZone!
+        
+        print(enddate!)
+        let endmillieseconds = self.getDiffernce(toTime: enddate!)
+        print(endmillieseconds)
+        print("endmillieseconds")
+        let ref = Database.database().reference(withPath: "Assignments").child("1066").child("114")
+        let _ = ref
+            .queryOrdered(byChild: "createdDate")
+            .queryStarting(atValue: startmillieseconds)//Thu Mar 29 2018 23:11:34
+            .queryEnding(atValue: endmillieseconds)//1522672258000
+            .queryLimited(toLast: 5)
+            .observe(.value, with: { snapshot in
+                // .observeSingleEvent(of: .value, with: { snapshot in
+                //  2
+                var newItems: [AssignmentData] = []
+                //  print(newItems)
+                print("newItems")
+                // 3
+                for item in snapshot.children {
+                    // 4
+                    let groceryItem = AssignmentData(snapshot: item as! DataSnapshot)
+                    newItems.append(groceryItem)
+                    print(groceryItem)
+                    print("GGgroceryItem")
+                }
+                // 5
+                self.items = newItems
+                self.AssignmentTableView .reloadData()
+            })
+        CalendarBGview.isHidden = false
         // selectedDateText.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         print(dayView.date.description)
         print(dayView.date.day)

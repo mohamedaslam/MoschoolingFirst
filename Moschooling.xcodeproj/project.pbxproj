@@ -68,6 +68,8 @@
 		AE707BC4204D17C900A3288D /* AssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */; };
 		AE707BC7204D17D000A3288D /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC5204D17D000A3288D /* UserDetail.swift */; };
 		AE707BC8204D17D000A3288D /* DriverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707BC6204D17D000A3288D /* DriverData.swift */; };
+		AE740D362073912200DDAEF4 /* StudentUpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE740D352073912200DDAEF4 /* StudentUpdateProfileVC.swift */; };
+		AE740D382073A46300DDAEF4 /* rsz_radiobuttonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE740D372073A46200DDAEF4 /* rsz_radiobuttonicon.png */; };
 		AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE87017A204D2604000F9033 /* GoogleService-Info.plist */; };
 		AEE415BC206A63BD00B8ADA5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */; };
 		AEE415BE206A652E00B8ADA5 /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */; };
@@ -160,6 +162,8 @@
 		AE707BBF204D17C900A3288D /* AssignmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewCell.swift; sourceTree = "<group>"; };
 		AE707BC5204D17D000A3288D /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		AE707BC6204D17D000A3288D /* DriverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverData.swift; sourceTree = "<group>"; };
+		AE740D352073912200DDAEF4 /* StudentUpdateProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUpdateProfileVC.swift; sourceTree = "<group>"; };
+		AE740D372073A46200DDAEF4 /* rsz_radiobuttonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_radiobuttonicon.png; sourceTree = "<group>"; };
 		AE87017A204D2604000F9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE87017D204D2A52000F9033 /* Moschooling-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moschooling-Bridge-Header.h"; sourceTree = "<group>"; };
 		AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -318,6 +322,7 @@
 				AE707BA5204D16CF00A3288D /* LoginVC.swift */,
 				186D5A68204F0C22004FC225 /* StudentListVC.swift */,
 				AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */,
+				AE740D352073912200DDAEF4 /* StudentUpdateProfileVC.swift */,
 				AE707BA7204D16E400A3288D /* SchoolBusVC.swift */,
 				AE707BA9204D170700A3288D /* AttendanceVC.swift */,
 				AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */,
@@ -338,6 +343,7 @@
 				187CD958206C07DE00456E0E /* SchoolBarImg.png */,
 				187CD95A206C07DE00456E0E /* TrackerBarImage.png */,
 				AE201241206E21E100BDE866 /* attachmentIM.png */,
+				AE740D372073A46200DDAEF4 /* rsz_radiobuttonicon.png */,
 				AE201240206E21E100BDE866 /* imageIM.png */,
 			);
 			path = Controller;
@@ -500,6 +506,7 @@
 				AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */,
 				187CD961206C081D00456E0E /* TrackerBarImag.png in Resources */,
 				187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */,
+				AE740D382073A46300DDAEF4 /* rsz_radiobuttonicon.png in Resources */,
 				187CD95E206C07DF00456E0E /* AttendanceBarimg.png in Resources */,
 				187CD965206C0A2800456E0E /* AssignmentBarIM.png in Resources */,
 				AE707B6F204D153400A3288D /* Main.storyboard in Resources */,
@@ -716,6 +723,7 @@
 				AE707BA4204D16B600A3288D /* AccessCodeVC.swift in Sources */,
 				AE707BB7204D17AE00A3288D /* HomeVC.swift in Sources */,
 				AE707BBA204D17C100A3288D /* VehicleLocationTableViewCell.swift in Sources */,
+				AE740D362073912200DDAEF4 /* StudentUpdateProfileVC.swift in Sources */,
 				AE707BAE204D173E00A3288D /* AssignmentVC.swift in Sources */,
 				186A284720599C38008FD323 /* StudentsAttendanceTableViewCell.swift in Sources */,
 				AE707BB0204D178600A3288D /* AcademicVC.swift in Sources */,
@@ -895,7 +903,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Desktop/MoschoolingFirst/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -913,7 +921,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moschooling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/Moschooling/Moschooling/Moschooling-Bridge-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaganjoshi/Desktop/MoschoolingFirst/Moschooling/Moschooling-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
