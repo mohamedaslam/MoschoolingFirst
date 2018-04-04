@@ -128,7 +128,83 @@ class StudentUpdateProfileVC: UIViewController {
     
     @IBAction func updateBtn(_ sender: Any)
     {
-        
+        /*
+         {
+         "FirstName": "string",
+         "LastName": "string",
+         "DOB": "2018-04-04T06:49:16.773Z",
+         "CasteID": 0,
+         "ReligionID": 0,
+         "ReservationID": 0,
+         "BloodGroup": "string",
+         "Address": "string",
+         "Gender": "string",
+         "ProfileImage": "string"
+         }
+ */
+        Alamofire.request("https://school.moschooling.com/API/UpdateStudent", method:.put, parameters: ["studentID": 213,"FirstName": "Mohammed","LastName": "Aslam","DOB": "1989-05-22T06:49:16.773Z","CasteID": 0,"ReligionID": 0,"ReservationID": 0, "BloodGroup": "B+ve","Address": "Bangalore","Gender": "Male","ProfileImage": "string"], encoding: JSONEncoding.default, headers:["UserID":"102"]).responseJSON { (response:DataResponse<Any>) in
+            
+            switch(response.result) {
+            case .success(_):
+                if((response.result.value) != nil) {
+                    let swiftyJsonVar = JSON(response.result.value!)
+                    print("AAAFAGetdata")
+
+                    print(swiftyJsonVar)
+                    print(swiftyJsonVar["status"])
+                    print("Getdata")
+                    
+                    
+                    if(swiftyJsonVar["status"] == true)
+                    {
+//                        var resData = swiftyJsonVar["User"]
+//                        let schoolName = resData["email"]
+//                        print(schoolName)
+//                        print(resData["IsPasswordResetted"])
+//                        print(resData["userID"])
+//                        print(resData["phone"])
+//                        print(resData["userName"])
+//                        print(resData["lastName"])
+//                        print(resData["firstName"])
+                        
+                        print("ALLLGetdata")
+                        
+//                        let next = self.storyboard?.instantiateViewController(withIdentifier: "StudentListVC") as! StudentListVC
+//                        // next.userIDstr = resData["userID"].int!
+//
+//                        self.present(next, animated: true, completion: nil)
+                    }else
+                    {
+                        let alert = UIAlertController(title: "Alert", message: "Worng AccessCode", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                                
+                            }}))
+                        self.present(alert, animated: true, completion: nil)
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                break
+                
+            case .failure(_):
+                print(response.result.error as Any)
+                break
+                
+            }
+        }
     }
     @IBAction func malebtn(_ sender: Any)
     {
