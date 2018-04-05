@@ -42,6 +42,7 @@
 		AE35463A205F9B7100197E6D /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354638205F9B7000197E6D /* CustomHeaderView.swift */; };
 		AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE354639205F9B7100197E6D /* CustomHeaderView.xib */; };
 		AE354641205F9F6700197E6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE354640205F9F6600197E6D /* ViewController.swift */; };
+		AE645C4B20762E0200E5D6A9 /* ParentsUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE645C4A20762E0200E5D6A9 /* ParentsUpdateVC.swift */; };
 		AE707B6A204D153400A3288D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE707B69204D153400A3288D /* AppDelegate.swift */; };
 		AE707B6F204D153400A3288D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE707B6D204D153400A3288D /* Main.storyboard */; };
 		AE707B71204D153400A3288D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE707B70204D153400A3288D /* Assets.xcassets */; };
@@ -130,6 +131,7 @@
 		AE354638205F9B7000197E6D /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		AE354639205F9B7100197E6D /* CustomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		AE354640205F9F6600197E6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE645C4A20762E0200E5D6A9 /* ParentsUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsUpdateVC.swift; sourceTree = "<group>"; };
 		AE707B66204D153300A3288D /* Moschooling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moschooling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE707B69204D153400A3288D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE707B6E204D153400A3288D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				186D5A68204F0C22004FC225 /* StudentListVC.swift */,
 				AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */,
 				AE740D352073912200DDAEF4 /* StudentUpdateProfileVC.swift */,
+				AE645C4A20762E0200E5D6A9 /* ParentsUpdateVC.swift */,
 				AE707BA7204D16E400A3288D /* SchoolBusVC.swift */,
 				AE707BA9204D170700A3288D /* AttendanceVC.swift */,
 				AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */,
@@ -719,6 +722,7 @@
 				186A284920599D39008FD323 /* StudentAttendanceTimeCollectionViewCell.swift in Sources */,
 				AE707BC8204D17D000A3288D /* DriverData.swift in Sources */,
 				186D5A69204F0C22004FC225 /* StudentListVC.swift in Sources */,
+				AE645C4B20762E0200E5D6A9 /* ParentsUpdateVC.swift in Sources */,
 				AE707BC7204D17D000A3288D /* UserDetail.swift in Sources */,
 				AE707BA4204D16B600A3288D /* AccessCodeVC.swift in Sources */,
 				AE707BB7204D17AE00A3288D /* HomeVC.swift in Sources */,
