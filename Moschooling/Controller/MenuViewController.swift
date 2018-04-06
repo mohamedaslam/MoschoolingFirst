@@ -58,12 +58,13 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func updateArrayMenuOptions(){
-        arrayMenuOptions.append(["title":"Teacherboard", "icon":"HomeIcon"])
-        arrayMenuOptions.append(["title":"PlayVC", "icon":"PlayIcon"])
-        arrayMenuOptions.append(["title":"Virtual class room", "icon":"PlayIcon"])
-        arrayMenuOptions.append(["title":"Calendar", "icon":"PlayIcon"])
-        arrayMenuOptions.append(["title":"Notification", "icon":"PlayIcon"])
-        arrayMenuOptions.append(["title":"Settings", "icon":"PlayIcon"])
+        arrayMenuOptions.append(["title":"Academics", "icon":"academics"])
+        arrayMenuOptions.append(["title":"Teacher's Board", "icon":"teacherboard"])
+        arrayMenuOptions.append(["title":"Payments", "icon":"payments"])
+        arrayMenuOptions.append(["title":"Review", "icon":"review"])
+        arrayMenuOptions.append(["title":"Messages", "icon":"messsages"])
+        arrayMenuOptions.append(["title":"Notification", "icon":"notification"])
+        arrayMenuOptions.append(["title":"Settings", "icon":"settings"])
         
         tblMenuOptions.reloadData()
     }

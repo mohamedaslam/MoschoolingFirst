@@ -72,6 +72,13 @@
 		AE740D362073912200DDAEF4 /* StudentUpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE740D352073912200DDAEF4 /* StudentUpdateProfileVC.swift */; };
 		AE740D382073A46300DDAEF4 /* rsz_radiobuttonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE740D372073A46200DDAEF4 /* rsz_radiobuttonicon.png */; };
 		AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE87017A204D2604000F9033 /* GoogleService-Info.plist */; };
+		AE88AF242077A37D00119343 /* messsages.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF1D2077A37C00119343 /* messsages.png */; };
+		AE88AF252077A37D00119343 /* teacherboard.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF1E2077A37C00119343 /* teacherboard.png */; };
+		AE88AF262077A37D00119343 /* payments.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF1F2077A37D00119343 /* payments.png */; };
+		AE88AF272077A37D00119343 /* review.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF202077A37D00119343 /* review.png */; };
+		AE88AF282077A37D00119343 /* academics.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF212077A37D00119343 /* academics.png */; };
+		AE88AF292077A37D00119343 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF222077A37D00119343 /* notification.png */; };
+		AE88AF2A2077A37D00119343 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = AE88AF232077A37D00119343 /* settings.png */; };
 		AEE415BC206A63BD00B8ADA5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */; };
 		AEE415BE206A652E00B8ADA5 /* TrackerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */; };
 		FA3CB1C35FF616952C619406 /* Pods_Moschooling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */; };
@@ -168,6 +175,13 @@
 		AE740D372073A46200DDAEF4 /* rsz_radiobuttonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_radiobuttonicon.png; sourceTree = "<group>"; };
 		AE87017A204D2604000F9033 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AE87017D204D2A52000F9033 /* Moschooling-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moschooling-Bridge-Header.h"; sourceTree = "<group>"; };
+		AE88AF1D2077A37C00119343 /* messsages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messsages.png; sourceTree = "<group>"; };
+		AE88AF1E2077A37C00119343 /* teacherboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherboard.png; sourceTree = "<group>"; };
+		AE88AF1F2077A37D00119343 /* payments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payments.png; sourceTree = "<group>"; };
+		AE88AF202077A37D00119343 /* review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = review.png; sourceTree = "<group>"; };
+		AE88AF212077A37D00119343 /* academics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = academics.png; sourceTree = "<group>"; };
+		AE88AF222077A37D00119343 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
+		AE88AF232077A37D00119343 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		AEE415BB206A63BD00B8ADA5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		AEE415BD206A652E00B8ADA5 /* TrackerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerVC.swift; sourceTree = "<group>"; };
 		B7825FD054F9168467C7F328 /* Pods_Moschooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moschooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +350,13 @@
 				AE707BB1204D17A500A3288D /* BaseViewController.swift */,
 				AE707BB4204D17AE00A3288D /* HomeVC.swift */,
 				AE707BB5204D17AE00A3288D /* MenuViewController.swift */,
+				AE88AF212077A37D00119343 /* academics.png */,
+				AE88AF1D2077A37C00119343 /* messsages.png */,
+				AE88AF222077A37D00119343 /* notification.png */,
+				AE88AF1F2077A37D00119343 /* payments.png */,
+				AE88AF202077A37D00119343 /* review.png */,
+				AE88AF232077A37D00119343 /* settings.png */,
+				AE88AF1E2077A37C00119343 /* teacherboard.png */,
 				AE707BB3204D17AD00A3288D /* PlayVC.swift */,
 				AE2F23EA206CC34C003113DF /* downarrow.png */,
 				AE2F23EB206CC34D003113DF /* uparrow.png */,
@@ -483,10 +504,12 @@
 			files = (
 				187ACC0F2067EA7F0069CA83 /* dashboardBarImg.png in Resources */,
 				AE707BA2204D166E00A3288D /* Drivermen.png in Resources */,
+				AE88AF262077A37D00119343 /* payments.png in Resources */,
 				187CD95B206C07DF00456E0E /* AssignmentBarImage.png in Resources */,
 				AE2F23EC206CC34D003113DF /* downarrow.png in Resources */,
 				AE87017B204D2604000F9033 /* GoogleService-Info.plist in Resources */,
 				AE707BA1204D166E00A3288D /* Bus.png in Resources */,
+				AE88AF272077A37D00119343 /* review.png in Resources */,
 				187ACC0E2067EA7F0069CA83 /* TrackerBarImg.png in Resources */,
 				AE201243206E21E200BDE866 /* attachmentIM.png in Resources */,
 				AE2F23ED206CC34D003113DF /* uparrow.png in Resources */,
@@ -496,21 +519,26 @@
 				AE201242206E21E200BDE866 /* imageIM.png in Resources */,
 				AE707B74204D153400A3288D /* LaunchScreen.storyboard in Resources */,
 				187ACC072067E79B0069CA83 /* MainBGImg.png in Resources */,
+				AE88AF282077A37D00119343 /* academics.png in Resources */,
 				AE354631205F9B6400197E6D /* CustomTableViewCell.xib in Resources */,
 				187CD95D206C07DF00456E0E /* SchoolBarImg.png in Resources */,
 				AE707B71204D153400A3288D /* Assets.xcassets in Resources */,
 				187CD95F206C07DF00456E0E /* TrackerBarImage.png in Resources */,
 				187CD963206C097200456E0E /* AttendanceBarImage.png in Resources */,
 				187CD95C206C07DF00456E0E /* dashboardBarImg.png in Resources */,
+				AE88AF252077A37D00119343 /* teacherboard.png in Resources */,
 				187ACC132067EA7F0069CA83 /* TrackerBarIM.png in Resources */,
 				187ACC052067E6F90069CA83 /* SchoolBarImg.png in Resources */,
+				AE88AF242077A37D00119343 /* messsages.png in Resources */,
 				187ACC042067E6F90069CA83 /* AttendanceBarimg.png in Resources */,
 				AE707B9F204D166E00A3288D /* Schoolbus.png in Resources */,
 				AE35463B205F9B7100197E6D /* CustomHeaderView.xib in Resources */,
 				187CD961206C081D00456E0E /* TrackerBarImag.png in Resources */,
 				187ACC102067EA7F0069CA83 /* AssignmentBarImg.png in Resources */,
 				AE740D382073A46300DDAEF4 /* rsz_radiobuttonicon.png in Resources */,
+				AE88AF292077A37D00119343 /* notification.png in Resources */,
 				187CD95E206C07DF00456E0E /* AttendanceBarimg.png in Resources */,
+				AE88AF2A2077A37D00119343 /* settings.png in Resources */,
 				187CD965206C0A2800456E0E /* AssignmentBarIM.png in Resources */,
 				AE707B6F204D153400A3288D /* Main.storyboard in Resources */,
 			);
